@@ -117,7 +117,7 @@ public class GestionPacientes {
             expedientes[contadorExpedientes] = new ExpedienteClinico(contadorExpedientes + 1, pacienteEncontrado, enf, ant, obs);
             contadorExpedientes++;
 
-            JOptionPane.showMessageDialog(null, "¡Expediente creado correctamente!");
+            JOptionPane.showMessageDialog(null, "¡Expediente creado correctamente!!");
         } else {
             JOptionPane.showMessageDialog(null, "No se encontró ningún paciente con ese ID.");
         }
