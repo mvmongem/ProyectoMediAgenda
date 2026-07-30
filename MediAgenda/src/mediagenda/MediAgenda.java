@@ -5,6 +5,7 @@
 package mediagenda;
 
 import javax.swing.JOptionPane;
+import mediagenda.Clases.GestionEspecialistas;
 import mediagenda.Clases.GestionPacientes;
 import mediagenda.Clases.GestionPagosRecetas;
 
@@ -46,7 +47,7 @@ public class MediAgenda {
                     moduloPacientes.mostrarMenu(); // Llamada al módulo de Mónica
                     break;
                 case 1:
-                    JOptionPane.showMessageDialog(null, "Módulo de Especialistas y Horarios");
+                    GestionEspecialistas.mostrarMenu();
                     break;
                 case 2:
                     JOptionPane.showMessageDialog(null, "Módulo de Citas y Consultas");
