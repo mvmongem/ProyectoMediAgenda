@@ -8,6 +8,7 @@ import javax.swing.JOptionPane;
 import mediagenda.Clases.GestionEspecialistas;
 import mediagenda.Clases.GestionPacientes;
 import mediagenda.Clases.GestionPagosRecetas;
+import mediagenda.Clases.GestionCitas;
 
 /**
  *
@@ -21,6 +22,7 @@ public class MediAgenda {
     public static void main(String[] args) {
         GestionPacientes moduloPacientes = new GestionPacientes();
         GestionPagosRecetas moduloPagos = new GestionPagosRecetas();
+        GestionCitas moduloCitas = new GestionCitas();
         
         String[] opcionesMenu = {
             "1. Pacientes y Expedientes",
@@ -50,7 +52,7 @@ public class MediAgenda {
                     GestionEspecialistas.mostrarMenu();
                     break;
                 case 2:
-                    JOptionPane.showMessageDialog(null, "Módulo de Citas y Consultas");
+                    moduloCitas.mostrarMenu();
                     break;
                 case 3:
                     moduloPagos.mostrarMenu();
