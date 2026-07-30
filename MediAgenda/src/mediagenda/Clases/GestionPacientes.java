@@ -82,8 +82,8 @@ public class GestionPacientes {
             String reporte = "=== LISTA DE PACIENTES ===\n";
             for (int i = 0; i < contadorPacientes; i++) {
                 reporte += "ID: " + pacientes[i].getIdPaciente() + 
-                           " | Nombre: " + pacientes[i].getNombre() + 
-                           " | Cédula: " + pacientes[i].getCedula() + "\n";
+                           "\n | Nombre: " + pacientes[i].getNombre() + 
+                           "\n | Cédula: " + pacientes[i].getCedula() + "\n";
             }
             JOptionPane.showMessageDialog(null, reporte);
         }
