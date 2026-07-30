@@ -6,6 +6,7 @@ package mediagenda;
 
 import javax.swing.JOptionPane;
 import mediagenda.Clases.GestionPacientes;
+import mediagenda.Clases.GestionPagosRecetas;
 
 /**
  *
@@ -18,6 +19,7 @@ public class MediAgenda {
      */
     public static void main(String[] args) {
         GestionPacientes moduloPacientes = new GestionPacientes();
+        GestionPagosRecetas moduloPagos = new GestionPagosRecetas();
         
         String[] opcionesMenu = {
             "1. Pacientes y Expedientes",
@@ -50,7 +52,7 @@ public class MediAgenda {
                     JOptionPane.showMessageDialog(null, "Módulo de Citas y Consultas");
                     break;
                 case 3:
-                    JOptionPane.showMessageDialog(null, "Módulo de Pagos y Recetas");
+                    moduloPagos.mostrarMenu();
                     break;
                 case 4:
                 case 5:
@@ -60,6 +62,7 @@ public class MediAgenda {
 
         } while (seleccion != 4 && seleccion != 5);
     }
-    }
+    
+ }
     
 
